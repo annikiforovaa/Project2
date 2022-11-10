@@ -1,20 +1,21 @@
-#define _USE_MATH_DEFINES
+//Use of necessary resources
+#define _USE_MATH_DEFINES 
 #include <iostream>
 #include <math.h>
-//task 7 (7. Найти корни квадратного уравнения.)
+//task 7
 int main()
 {
-    double a, b, c, d, x1, x2; //Объявим переменные
-
-    std::cout << "Enter a" << std::endl;
-    std::cin >> a;
+    double a, b, c, d, x1, x2; //Declaring variables
+    //Output a string to the user and user input
+    std::cout << "Enter a" << std::endl; 
+    std::cin >> a; 
     std::cout << "Enter b" << std::endl;
     std::cin >> b;
     std::cout << "Enter c" << std::endl;
     std::cin >> c;
 
-    d = b * b - 4 * a * c; //Формула подсчета дискриминанта
-    //Предусмотрим условия для дискриминанта
+    d = b * b - 4 * a * c; //The formula for calculating the discriminant
+//Provoding conditions for the discriminant using if
     if (d > 0) 
     {
         x1 = ((-b) + sqrt(d)) / (2 * a);
@@ -28,5 +29,5 @@ int main()
         std::cout << "x1 = x2 = " << x1 << std::endl;
     }
     if (d < 0) 
-        std::cout;
-}
+        std::cout << "There is no solution";
+}S
